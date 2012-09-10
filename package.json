@@ -5,6 +5,9 @@
   "author": "Luis Reis <luis@luismreis.com> (http://luismreis.com/)",
   "name": "openvg",
   "description": "Freetype bindings for node-openvg",
+  "bin": {
+    "font2openvg": "./bin/font2openvg.js"
+  },
   "scripts" : {
     "preinstall": "node-waf clean || true; node-waf configure build"
   },
