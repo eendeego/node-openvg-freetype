@@ -6,7 +6,15 @@ Parts of it are based on [Hybrid Graphics font2openvg.cpp](http://web.archive.or
 
 ## 0. Installation
 
-Fetch the source:
+This library depends on freetype. To install freetype:
+
+    apt-get install -y libfreetype6 libfreetype6-dev
+
+To run samples, the dejavu font set is also expected to be installed:
+
+    apt-get install -y ttf-dejavu-core
+
+To install node-openvg-freetype, fetch the source:
 
     git clone https://github.com/luismreis/node-openvg-freetype.git
 
