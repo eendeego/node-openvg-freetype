@@ -9,6 +9,8 @@
 #include "util.h"
 #include "freetype.h"
 
+// #include <stdio.h>
+
 using namespace node;
 using namespace v8;
 
@@ -80,6 +82,19 @@ Handle<Value> freetype::NewMemoryFace(const Arguments& args) {
   FT_Byte* file_base  = (FT_Byte*) bufferData;
   FT_Long  file_size  = (FT_Long) bufferLength;
   FT_Long  face_index = (FT_Long) (FT_Long) args[2]->Int32Value();
+
+  // // TODO: One or more of:
+  // //         * Enable/Disable this code with macros
+  // //         * Implement similar functionality in test code.
+  // printf("FT_New_Memory_Face(%p - %d, %p, %ld, %ld, %p)\n",
+  //        *library, (int) *library,
+  //        file_base,
+  //        file_size,
+  //        face_index,
+  //        face);
+  //
+  // printf("  file_base(%2x, %2x, %2x, %2x, %2x)\n",
+  //        file_base[0], file_base[1], file_base[2], file_base[3], file_base[4]);
 
   FT_Error error =
     FT_New_Memory_Face(*library,
