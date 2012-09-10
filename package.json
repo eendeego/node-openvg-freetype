@@ -22,7 +22,7 @@
   },
   "dependencies": { },
   "devDependencies": {
-     "node-openvg"   :  "https://github.com/luismreis/node-openvg.git"
+     "node-openvg"   :  "https://github.com/luismreis/node-openvg/tarball/master"
   },
   "license" : "MIT",
   "engines": {
