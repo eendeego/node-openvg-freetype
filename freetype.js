@@ -1,5 +1,7 @@
 var ft = module.exports = require('./build/Release/node-openvg-freetype.node');
 
+var loading = require('./lib/loading');
+
 ft.LOAD_DEFAULT                      = 0x0;
 ft.LOAD_NO_SCALE                     = 1 <<  0;
 ft.LOAD_NO_HINTING                   = 1 <<  1;
@@ -27,3 +29,8 @@ function done() {
 }
 
 process.on('exit', done);
+
+ft.loadFontFile = loading.loadFontFile;
+ft.loadFont     = loading.loadFont;
+ft.loadJSONFont = loading.loadJSONFont;
+ft.unloadFont   = loading.unloadFont;
