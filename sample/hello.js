@@ -31,6 +31,10 @@ function hello(f) {
   vu.end();                               // End the picture
 }
 
+if (process.argv.length > 2) {
+  fontPath = process.argv[2];
+}
+
 var font = ft.loadFontFile(fontPath, function(err, f) {
   hello(f);
 });
