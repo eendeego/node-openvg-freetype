@@ -1,0 +1,28 @@
+{
+  "name": "openvg",
+  "preferGlobal": "true",
+  "version": "0.1.0",
+  "author": "Luis Reis <luis@luismreis.com> (http://luismreis.com/)",
+  "name": "openvg",
+  "description": "Freetype bindings for node-openvg",
+  "scripts" : {
+    "preinstall": "node-waf clean || true; node-waf configure build"
+  },
+  "main": "freetype.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/luismreis/node-openvg-freetype.git"
+  },
+  "main": "freetype.js",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": { },
+  "devDependencies": {
+     "node-openvg"   :  "https://github.com/luismreis/node-openvg.git"
+  },
+  "license" : "MIT",
+  "engines": {
+    "node": ">=0.8"
+  }
+}
